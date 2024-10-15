@@ -107,7 +107,7 @@
 // lmic_project_config.h, runtime assertion failures are displayed
 // using the Serial object.
 #if ! defined(DISABLE_LMIC_FAILURE_TO) && ! defined(LMIC_FAILURE_TO)
-#define LMIC_FAILURE_TO Serial
+#define LMIC_FAILURE_TO LMIC_PRINTF_TO
 #endif
 
 // define this in lmic_project_config.h to disable all code related to joining
